@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8"></meta>
+        <title>Hayward Chan's personal webpage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./index.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                VANTA.BIRDS({
+                    el: "#vanta",
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: true,
+                    minHeight: 200.00,
+                    minWidth: 200.00,
+                    scale: 1.00,
+                    scaleMobile: 1.00,
+                    wingSpan: 40.00,
+                    separation: 100.00,
+                    alignment: 80.00,
+                    cohesion: 7.00,
+                    quantity: 2.00,
+                    backgroundAlpha: 0.0
+                    })
+                    setTimeout(()=>{
+                        const main = document.querySelector('main')
+                        // console.log('main:', main)
+                        main.style.opacity = 1
+                        main.style.filter = 'blur(0px)'
+                    }, 1000)
+                
+            })            
+        </script>
+    </head>
+    <body>
+        <div id="vanta"></div>
+        <main>
+            <header>
+                <img src="./images/profile pic.png"/>
+                <h1>@hayward7.4</h1>
+            </header>
+            <ul>
+                <li>
+                    <a href="file:///C:/vs%20code/Instagram_linkinbio/about_me.html">
+                        <img src="./images/seed.png" alt="About me" width="20" />
+                    About me
+                    </a>
+                </li>
+                <li>
+                    <a href="file:///C:/vs%20code/Instagram_linkinbio/other_acc.html">
+                        <img src="./images/instagram_icon.png" alt="Other accounts" width="20" />
+                        Other accounts
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Haywardchan">
+                        <img src="./images/github_icon.png" alt="GitHub" width="20" />
+                        GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="file:///C:/vs%20code/Instagram_linkinbio/contact.html">
+                        <img src="./images/email.png" alt="email" width="20" />
+                        Email
+                    </a>                    
+                </li>
+            </ul>
+        </main>
+    </body>
+</html>
